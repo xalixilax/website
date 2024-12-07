@@ -1,0 +1,21 @@
+version: '3.9' # Adjust version based on your needs
+
+services:
+  # xalixilax-client:
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile
+  #     args:
+  #       WORKSPACE: "xalixilax"
+  #   ports:
+  #     - "8080:80" # Adjust ports as needed
+  #   environment:
+  #     - NODE_ENV=production # Example environment variable
+  #   volumes:
+  #     - ./client/xalixilax:/app # Bind mount your project directory
+  storybook:
+    build:
+      context: .
+      dockerfile: Dockerfile.storybook
+    ports:
+      - "6006:6006"

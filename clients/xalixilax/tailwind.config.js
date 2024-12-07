@@ -1,0 +1,1 @@
+module.exports = require("../../packages/design-system/tailwind.config.js");
